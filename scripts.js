@@ -23,8 +23,8 @@ function displayRecipes(recipes) {
     return `<div class="recipe">
       <h2>${recipe.name} </h2>
       <p>${recipe.description} </p>
+       <img class="picture" src="${recipe.url}" alt="${recipe.name}" />
       <p>${recipe.method} </p>
-      <img src="${recipe.url}" alt="${recipe.name}" />
       <a href="${recipe.web}">View recipe </a>
     </div>`
   });
@@ -34,3 +34,5 @@ recipesGrid.innerHTML = html.join('');
 form.addEventListener('submit', handleSubmit);
 
 fetchRecipes('pizza');
+
+//  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

@@ -6,35 +6,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Recipe Fetcher</title>
   <link rel="stylesheet" href="./base.css">
-  <style>
-    .search {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
 
-    button[disabled] {
-      opacity: 0.2;
-    }
-
-    .recipes {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      grid-gap: 20px;
-    }
-
-    .recipe {
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      padding: 20px;
-    }
-
-  </style>
 </head>
 
 <body>
+  <header>
+    <img />
+    <h3>Looking for fast vegan recipes?</h3>
+  </header>
   <div class="wrapper">
     <form class="search" autocomplete="off">
       <input type="text" name="query" value="pizza ">
-      <button name="submit" type="submit">Submit</button>
+      <button name="submit" type="submit">Search</button>
     </form>
     <div class="recipes"></div>
   </div>
