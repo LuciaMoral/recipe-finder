@@ -2,7 +2,46 @@
   box-sizing: border-box;
 }
 
-body {}
+/* Colour palette */
+
+:root {
+  --yellow: #EFEF4D;
+  --green: #39AA72;
+  --bg-color: #E5E5E5;
+}
+
+/* Global styles */
+
+body {
+  margin: 0 auto;
+  font-family: 'Bitter', serif;
+
+}
+
+.wrapper {
+  max-width: 1150px;
+  padding: 1em;
+}
+
+.header {
+  background-color: var(--green);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.strapline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-self: flex-end;
+  color: var(--yellow)
+
+}
+
 
 /* search & form */
 .search {

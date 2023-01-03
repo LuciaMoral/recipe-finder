@@ -1,5 +1,39 @@
-.dropdown {
-  min-width: 15em;
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #efef4d;
+  --green: #39aa72;
+  --bg-color: #e5e5e5;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Bitter, serif;
+}
+
+.wrapper {
+  max-width: 1150px;
+  padding: 1em;
+}
+
+.header {
+  background-color: var(--green);
+}
+
+.navbar {
+  justify-content: space-between;
+  padding: 2em;
+  display: flex;
+}
+
+.strapline {
+  text-transform: uppercase;
+  color: var(--yellow);
+  align-self: flex-end;
+  font-size: .75rem;
+  font-weight: 600;
 }
 
 .search {

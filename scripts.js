@@ -34,5 +34,3 @@ recipesGrid.innerHTML = html.join('');
 form.addEventListener('submit', handleSubmit);
 
 fetchRecipes('pizza');
-
-//  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

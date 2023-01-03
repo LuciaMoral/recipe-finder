@@ -27,6 +27,6 @@ function displayRecipes(recipes) {
     recipesGrid.innerHTML = html.join("");
 }
 form.addEventListener("submit", handleSubmit);
-fetchRecipes("pizza"); //  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+fetchRecipes("pizza");
 
 //# sourceMappingURL=index.5e469f4a.js.map
